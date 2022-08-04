@@ -11,7 +11,9 @@ class TasksScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
         onPressed: () {
           showModalBottomSheet(
-              context: context, builder: (context) => AddTaskScreen());
+              context: context,
+              //isScrollControlled: true,
+              builder: (context) => AddTaskScreen());
         },
         child: Icon(Icons.add),
       ),
